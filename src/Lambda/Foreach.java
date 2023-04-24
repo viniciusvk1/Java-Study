@@ -14,14 +14,13 @@ public class Foreach {
         }
 
         System.out.println("\\nLambda");
-        aprovados.forEach((nome) -> {
-            System.out.println(nome + "!!!");
-        });
+        aprovados.forEach((nome) -> {System.out.println(nome + "!!!");});
 
         System.out.println("\nMethod Reference");
         aprovados.forEach(System.out::println);
 
         System.out.println("\nLambda 2");
+
         aprovados.forEach((nome) -> meuImprimir(nome));
 
         System.out.println("\n Method Reference 2");
