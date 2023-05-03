@@ -1,8 +1,8 @@
-package Heranca.application;
+package Heranca.Exemplo1.entities.application;
 
-import Heranca.entities.Account;
-import Heranca.entities.BusinessAccount;
-import Heranca.entities.SavingsAccount;
+import Heranca.Exemplo1.entities.Account;
+import Heranca.Exemplo1.entities.BusinessAccount;
+import Heranca.Exemplo1.entities.SavingsAccount;
 
 
 public class Program {
@@ -35,5 +35,15 @@ public class Program {
             acc5.updateBalance();
             System.out.println("Update!");
         }
+
+        Account acc10 = new Account(1010, "Vini", 1000.00);
+        acc10.withdraw(200.00);
+        System.out.println(acc10.getBalance());
+
+        Account acc11 = new SavingsAccount(1011, "Pedro", 1000.00, 0.01);
+        acc11.withdraw(200.00);
+        System.out.println(acc11.getBalance());
+
     }
+
 }

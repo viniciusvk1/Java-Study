@@ -1,4 +1,4 @@
-package Heranca.entities;
+package Heranca.Exemplo1.entities;
 
 public class BusinessAccount extends Account {
 

@@ -1,4 +1,4 @@
-package Heranca.entities;
+package Heranca.Exemplo1.entities;
 
 public class SavingsAccount extends Account {
 
@@ -25,4 +25,8 @@ public class SavingsAccount extends Account {
         balance += balance * interestRate;
     }
 
+    @Override
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
 }
