@@ -7,7 +7,7 @@ import java.util.Scanner;
 public class Program {
     public static void main(String[] args) {
 
-        File file = new File("C:\\Users\\vinic\\OneDrive\\Documentos\\camilinha\\in.txt"); // Arquivo txt criado para estudos
+        File file = new File("C:\\Users\\vinic\\OneDrive\\Documentos\\testFolder\\in.txt"); // Arquivo txt criado para estudos
         Scanner sc = null;
         try {
             sc = new Scanner(file);
